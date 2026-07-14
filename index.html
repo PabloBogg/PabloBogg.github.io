@@ -1,198 +1,268 @@
 <!DOCTYPE html>
-<html lang="es">
+<html lang="en">
+
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-  <title>Pablo Boggetti | Ingeniería Eléctrica y Analítica</title>
+  <meta
+    name="viewport"
+    content="width=device-width, initial-scale=1.0"
+  >
 
-  <style>
-    body {
-      margin: 0;
-      font-family: Arial, sans-serif;
-      background: #f5f7f8;
-      color: #1f2933;
-      line-height: 1.6;
-    }
+  <meta
+    name="description"
+    content="Portfolio of Pablo Boggetti, Electrical Engineer specialized in asset reliability, data analytics and power systems."
+  >
 
-    header {
-      background: #123b4a;
-      color: white;
-      padding: 70px 20px;
-      text-align: center;
-    }
+  <title>Pablo Boggetti | Engineering Analytics</title>
 
-    header h1 {
-      margin: 0;
-      font-size: 42px;
-    }
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 
-    header p {
-      margin-top: 12px;
-      font-size: 19px;
-    }
+  <link
+    href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap"
+    rel="stylesheet"
+  >
 
-    nav {
-      background: white;
-      padding: 15px;
-      text-align: center;
-      border-bottom: 1px solid #dddddd;
-    }
-
-    nav a {
-      margin: 0 12px;
-      color: #123b4a;
-      text-decoration: none;
-      font-weight: bold;
-    }
-
-    section {
-      max-width: 1000px;
-      margin: auto;
-      padding: 50px 20px;
-    }
-
-    h2 {
-      color: #123b4a;
-      border-bottom: 2px solid #5b9f8a;
-      padding-bottom: 8px;
-    }
-
-    .projects {
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
-      gap: 20px;
-    }
-
-    .card {
-      background: white;
-      border-radius: 8px;
-      padding: 24px;
-      box-shadow: 0 3px 12px rgba(0,0,0,0.08);
-    }
-
-    .card h3 {
-      margin-top: 0;
-      color: #123b4a;
-    }
-
-    .button {
-      display: inline-block;
-      margin-top: 12px;
-      padding: 10px 16px;
-      background: #123b4a;
-      color: white;
-      text-decoration: none;
-      border-radius: 5px;
-    }
-
-    footer {
-      text-align: center;
-      background: #123b4a;
-      color: white;
-      padding: 25px;
-    }
-  </style>
+  <link rel="stylesheet" href="styles.css">
 </head>
 
 <body>
 
-<header>
-  <h1>Pablo Boggetti</h1>
-  <p>Ingeniero Electricista | Confiabilidad de Activos | Ciencia de Datos</p>
-</header>
+  <header class="site-header">
 
-<nav>
-  <a href="#sobre-mi">Sobre mí</a>
-  <a href="#proyectos">Proyectos</a>
-  <a href="#experiencia">Experiencia</a>
-  <a href="#contacto">Contacto</a>
-</nav>
+    <nav class="navbar">
 
-<section id="sobre-mi">
-  <h2>Sobre mí</h2>
+      <a href="#" class="brand">
+        Pablo Boggetti
+      </a>
 
-  <p>
-    Soy Ingeniero Electricista con experiencia en diagnóstico de activos de alta
-    tensión, mantenimiento basado en condición y análisis de datos técnicos para
-    la toma de decisiones.
-  </p>
+      <button
+        class="menu-button"
+        type="button"
+        aria-label="Open navigation menu"
+        aria-expanded="false"
+      >
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
 
-  <p>
-    Mi interés profesional se centra en integrar ingeniería eléctrica, confiabilidad,
-    ciencia de datos y transformación digital para desarrollar soluciones aplicadas
-    al sector energético.
-  </p>
-</section>
+      <div class="nav-links">
+        <a href="#about">About</a>
+        <a href="#expertise">Expertise</a>
+        <a href="#projects">Projects</a>
+        <a href="#research">Research</a>
+        <a href="#contact">Contact</a>
+      </div>
 
-<section id="proyectos">
-  <h2>Proyectos</h2>
+    </nav>
 
-  <div class="projects">
+  </header>
 
-    <div class="card">
-      <h3>Índice de salud de activos</h3>
-      <p>
-        Modelo para priorizar activos eléctricos mediante variables de condición,
-        criticidad e historial de eventos.
+  <main>
+
+    <section class="hero">
+
+      <div class="hero-overlay"></div>
+
+      <div class="hero-container">
+
+        <div class="hero-content">
+
+          <p class="eyebrow">
+            Electrical Engineering · Asset Reliability · Data Analytics
+          </p>
+
+          <h1>
+            Transforming engineering data into better decisions for critical electrical infrastructure.
+          </h1>
+
+          <p class="hero-description">
+            Electrical Engineer with experience in high-voltage asset diagnostics,
+            condition-based maintenance and technical data analysis applied to
+            power systems.
+          </p>
+
+          <div class="hero-actions">
+
+            <a
+              href="#projects"
+              class="button button-primary"
+            >
+              View Projects
+            </a>
+
+            <a
+              href="cv/Pablo_Boggetti_Asset_Reliability_CV.pdf"
+              class="button button-secondary"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              Download CV
+            </a>
+
+          </div>
+
+          <div class="hero-tags">
+
+            <span>Power Systems</span>
+            <span>Condition Monitoring</span>
+            <span>Machine Learning</span>
+            <span>Power BI</span>
+
+          </div>
+
+        </div>
+
+        <div class="hero-profile">
+
+          <div class="profile-frame">
+
+            <img
+              src="images/profile/profile.jpg"
+              alt="Pablo Boggetti"
+            >
+
+          </div>
+
+          <div class="profile-note">
+
+            <strong>Pablo Boggetti</strong>
+
+            <span>
+              Electrical Engineer
+            </span>
+
+            <span>
+              Córdoba, Argentina
+            </span>
+
+          </div>
+
+        </div>
+
+      </div>
+
+      <a
+        href="#about"
+        class="scroll-indicator"
+        aria-label="Scroll to next section"
+      >
+        <span>Explore</span>
+        <span class="scroll-arrow">↓</span>
+      </a>
+
+    </section>
+
+    <section id="about" class="placeholder-section">
+
+      <p class="section-label">
+        About
       </p>
-      <a class="button" href="#">Próximamente</a>
+
+      <h2>
+        Engineering experience combined with data-driven thinking.
+      </h2>
+
+      <p>
+        This section will be developed during Sprint 2.
+      </p>
+
+    </section>
+
+    <section id="expertise" class="placeholder-section alternate">
+
+      <p class="section-label">
+        Expertise
+      </p>
+
+      <h2>
+        Asset reliability, electrical systems and engineering analytics.
+      </h2>
+
+      <p>
+        This section will be developed during Sprint 2.
+      </p>
+
+    </section>
+
+    <section id="projects" class="placeholder-section">
+
+      <p class="section-label">
+        Projects
+      </p>
+
+      <h2>
+        Applied projects in electrical engineering and data analytics.
+      </h2>
+
+      <p>
+        Project case studies will be added during Sprint 3.
+      </p>
+
+    </section>
+
+    <section id="research" class="placeholder-section alternate">
+
+      <p class="section-label">
+        Research
+      </p>
+
+      <h2>
+        Research, technical collaboration and continuous learning.
+      </h2>
+
+      <p>
+        This section will include CIGRE activities and technical research.
+      </p>
+
+    </section>
+
+  </main>
+
+  <footer id="contact" class="site-footer">
+
+    <div>
+
+      <strong>Pablo Boggetti</strong>
+
+      <p>
+        Electrical Engineering · Asset Reliability · Data Analytics
+      </p>
+
     </div>
 
-    <div class="card">
-      <h3>Predicción de temperatura de cables</h3>
-      <p>
-        Aplicación de modelos predictivos para estimar el comportamiento térmico
-        de cables eléctricos.
-      </p>
-      <a class="button" href="#">Próximamente</a>
+    <div class="footer-links">
+
+      <a
+        href="mailto:pablo_boggetti@hotmail.com"
+      >
+        Email
+      </a>
+
+      <a
+        href="https://www.linkedin.com/in/pablo-boggetti-5958754b/"
+        target="_blank"
+        rel="noopener noreferrer"
+      >
+        LinkedIn
+      </a>
+
+      <a
+        href="https://github.com/PabloBogg"
+        target="_blank"
+        rel="noopener noreferrer"
+      >
+        GitHub
+      </a>
+
     </div>
 
-    <div class="card">
-      <h3>Dashboard del sistema eléctrico</h3>
-      <p>
-        Tablero de Power BI orientado al análisis de demanda, generación y
-        confiabilidad del sistema eléctrico.
-      </p>
-      <a class="button" href="#">Próximamente</a>
-    </div>
+  </footer>
 
-  </div>
-</section>
-
-<section id="experiencia">
-  <h2>Experiencia</h2>
-
-  <p>
-    Más de ocho años de experiencia en el sector de transmisión eléctrica,
-    diagnóstico de activos de alta tensión, ensayos eléctricos, mantenimiento
-    predictivo y gestión de equipos técnicos.
-  </p>
-</section>
-
-<section id="contacto">
-  <h2>Contacto</h2>
-
-  <p>Email: pablo_boggetti@hotmail.com</p>
-
-  <p>
-    <a href="https://www.linkedin.com/in/pablo-boggetti-5958754b/"
-       target="_blank">
-       LinkedIn
-    </a>
-  </p>
-
-  <p>
-    <a href="https://github.com/PabloBogg"
-       target="_blank">
-       GitHub
-    </a>
-  </p>
-</section>
-
-<footer>
-  <p>© 2026 Pablo Boggetti</p>
-</footer>
+  <script src="script.js"></script>
 
 </body>
+
 </html>
