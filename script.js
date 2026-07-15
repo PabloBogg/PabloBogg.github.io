@@ -36,11 +36,70 @@ const translations = {
     aboutText:
       "Esta sección será desarrollada durante el Sprint 2.",
 
-    expertiseLabel: "Especialidades",
-    expertiseTitle:
-      "Confiabilidad de activos, sistemas eléctricos y analítica aplicada a ingeniería.",
-    expertiseText:
-      "Esta sección será desarrollada durante el Sprint 2.",
+    expertiseLabel: "Qué hago",
+
+expertiseTitle:
+  "Ingeniería eléctrica, confiabilidad y soluciones digitales para infraestructuras energéticas.",
+
+expertiseIntroduction:
+  "Integro experiencia técnica en sistemas eléctricos con herramientas digitales para desarrollar proyectos, evaluar activos y transformar datos en decisiones.",
+
+electricalEngineeringTitle:
+  "Ingeniería eléctrica",
+
+electricalEngineeringDescription:
+  "Desarrollo y apoyo técnico para proyectos eléctricos, subestaciones, instalaciones de alta tensión y documentación de ingeniería.",
+
+electricalItem1:
+  "Subestaciones y sistemas de potencia",
+
+electricalItem2:
+  "Equipamiento de alta tensión",
+
+electricalItem3:
+  "Documentación y análisis técnico",
+
+electricalItem4:
+  "Apoyo a proyectos de ingeniería",
+
+reliabilityTitle:
+  "Confiabilidad de activos",
+
+reliabilityDescription:
+  "Evaluación de condición y diagnóstico de activos críticos para optimizar mantenimiento, disponibilidad y toma de decisiones.",
+
+reliabilityItem1:
+  "Mantenimiento predictivo",
+
+reliabilityItem2:
+  "Monitoreo basado en condición",
+
+reliabilityItem3:
+  "Análisis de ensayos eléctricos",
+
+reliabilityItem4:
+  "Gestión y priorización de activos",
+
+analyticsTitle:
+  "Analítica aplicada a ingeniería",
+
+analyticsDescription:
+  "Procesamiento, visualización y análisis de datos técnicos para generar indicadores, reportes y modelos de apoyo a decisiones.",
+
+analyticsItem4:
+  "Machine Learning y modelos predictivos",
+
+digitalEngineeringTitle:
+  "Ingeniería digital",
+
+digitalEngineeringDescription:
+  "Aplicación de BIM, automatización y gestión de información para mejorar la coordinación y el desarrollo de proyectos eléctricos.",
+
+digitalItem3:
+  "Metodología BIM",
+
+digitalItem4:
+  "Automatización y gestión de información",
 
     projectsLabel: "Proyectos",
     projectsTitle:
@@ -95,11 +154,70 @@ const translations = {
     aboutText:
       "This section will be developed during Sprint 2.",
 
-    expertiseLabel: "Expertise",
-    expertiseTitle:
-      "Asset reliability, electrical systems and engineering analytics.",
-    expertiseText:
-      "This section will be developed during Sprint 2.",
+    expertiseLabel: "What I Do",
+
+expertiseTitle:
+  "Electrical engineering, reliability and digital solutions for energy infrastructure.",
+
+expertiseIntroduction:
+  "I combine technical experience in electrical systems with digital tools to develop projects, assess assets and transform data into decisions.",
+
+electricalEngineeringTitle:
+  "Electrical Engineering",
+
+electricalEngineeringDescription:
+  "Technical development and support for electrical projects, substations, high-voltage installations and engineering documentation.",
+
+electricalItem1:
+  "Substations and power systems",
+
+electricalItem2:
+  "High-voltage equipment",
+
+electricalItem3:
+  "Technical analysis and documentation",
+
+electricalItem4:
+  "Electrical engineering project support",
+
+reliabilityTitle:
+  "Asset Reliability",
+
+reliabilityDescription:
+  "Condition assessment and diagnosis of critical assets to improve maintenance, availability and decision-making.",
+
+reliabilityItem1:
+  "Predictive maintenance",
+
+reliabilityItem2:
+  "Condition-based monitoring",
+
+reliabilityItem3:
+  "Electrical test analysis",
+
+reliabilityItem4:
+  "Asset management and prioritization",
+
+analyticsTitle:
+  "Engineering Analytics",
+
+analyticsDescription:
+  "Processing, visualization and analysis of technical data to develop indicators, reports and decision-support models.",
+
+analyticsItem4:
+  "Machine Learning and predictive models",
+
+digitalEngineeringTitle:
+  "Digital Engineering",
+
+digitalEngineeringDescription:
+  "Application of BIM, automation and information management to improve coordination and electrical project development.",
+
+digitalItem3:
+  "BIM methodology",
+
+digitalItem4:
+  "Automation and information management",
 
     projectsLabel: "Projects",
     projectsTitle:
