@@ -1,16 +1,746 @@
 <!DOCTYPE html>
-
-<html>
+<html lang="es">
 
 <head>
+  <meta charset="UTF-8">
 
-<title>En desarrollo</title>
+  <meta
+    name="viewport"
+    content="width=device-width, initial-scale=1.0"
+  >
 
+  <meta
+    name="description"
+    content="Caso de estudio BIM aplicado al diseño y coordinación de una subestación AIS de 500 kV."
+  >
+
+  <title>
+    Diseño BIM de una Subestación AIS de 500 kV | Pablo Boggetti
+  </title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+
+  <link
+    rel="preconnect"
+    href="https://fonts.gstatic.com"
+    crossorigin
+  >
+
+  <link
+    href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap"
+    rel="stylesheet"
+  >
+
+  <link rel="stylesheet" href="../css/project.css">
 </head>
 
 <body>
 
-<h1>Próximamente</h1>
+  <header class="project-header">
+
+    <nav class="project-navbar">
+
+      <a
+        href="../index.html"
+        class="project-brand"
+      >
+        Pablo Boggetti
+      </a>
+
+      <div class="project-navigation">
+
+        <a
+          href="../index.html#projects"
+          data-i18n="backPortfolio"
+        >
+          Volver al portfolio
+        </a>
+
+        <div
+          class="language-selector"
+          role="group"
+          aria-label="Selector de idioma"
+        >
+
+          <button
+            class="language-button active"
+            type="button"
+            data-language="es"
+            aria-pressed="true"
+          >
+            ES
+          </button>
+
+          <span>|</span>
+
+          <button
+            class="language-button"
+            type="button"
+            data-language="en"
+            aria-pressed="false"
+          >
+            EN
+          </button>
+
+        </div>
+
+      </div>
+
+    </nav>
+
+  </header>
+
+  <main>
+
+    <!-- Portada -->
+
+    <section class="project-hero">
+
+      <div class="project-hero-overlay"></div>
+
+      <div class="project-hero-content">
+
+        <p
+          class="project-eyebrow"
+          data-i18n="heroEyebrow"
+        >
+          Ingeniería eléctrica · BIM · Subestaciones
+        </p>
+
+        <h1 data-i18n="heroTitle">
+          Diseño BIM de una Subestación AIS de 500 kV
+        </h1>
+
+        <p
+          class="project-hero-description"
+          data-i18n="heroDescription"
+        >
+          Aplicación de metodología BIM para desarrollar, coordinar y gestionar
+          la información de una infraestructura eléctrica de extra alta tensión.
+        </p>
+
+        <div class="project-tags">
+
+          <span>Revit</span>
+          <span>BIM</span>
+          <span>IFC</span>
+          <span>ISO 19650</span>
+          <span>500 kV</span>
+
+        </div>
+
+      </div>
+
+    </section>
+
+    <!-- Resumen -->
+
+    <section class="project-summary">
+
+      <div class="summary-label">
+
+        <p data-i18n="projectTypeLabel">
+          Tipo de proyecto
+        </p>
+
+        <strong data-i18n="projectTypeValue">
+          Caso de estudio técnico
+        </strong>
+
+      </div>
+
+      <div class="summary-label">
+
+        <p data-i18n="disciplineLabel">
+          Disciplina
+        </p>
+
+        <strong data-i18n="disciplineValue">
+          Ingeniería eléctrica y BIM
+        </strong>
+
+      </div>
+
+      <div class="summary-label">
+
+        <p data-i18n="applicationLabel">
+          Aplicación
+        </p>
+
+        <strong data-i18n="applicationValue">
+          Subestación AIS de 500 kV
+        </strong>
+
+      </div>
+
+      <div class="summary-label">
+
+        <p data-i18n="statusLabel">
+          Estado
+        </p>
+
+        <strong data-i18n="statusValue">
+          En desarrollo
+        </strong>
+
+      </div>
+
+    </section>
+
+    <!-- Contexto -->
+
+    <section class="content-section">
+
+      <div class="content-heading">
+
+        <p
+          class="section-number"
+          data-i18n="contextNumber"
+        >
+          01 · Contexto
+        </p>
+
+        <h2 data-i18n="contextTitle">
+          Integrar el diseño eléctrico y la gestión de información
+        </h2>
+
+      </div>
+
+      <div class="content-columns">
+
+        <p data-i18n="contextParagraph1">
+          Las subestaciones de extra alta tensión reúnen equipamiento primario,
+          estructuras, sistemas de control, canalizaciones y obras civiles que
+          deben coordinarse dentro de un entorno técnico de alta complejidad.
+        </p>
+
+        <p data-i18n="contextParagraph2">
+          El proyecto propone utilizar BIM como metodología para centralizar la
+          información, mejorar la coordinación entre disciplinas y generar una
+          representación digital coherente de la instalación.
+        </p>
+
+      </div>
+
+    </section>
+
+    <!-- Objetivo -->
+
+    <section class="content-section alternate-section">
+
+      <div class="content-heading">
+
+        <p
+          class="section-number"
+          data-i18n="objectiveNumber"
+        >
+          02 · Objetivo
+        </p>
+
+        <h2 data-i18n="objectiveTitle">
+          Desarrollar un modelo coordinado y útil para el ciclo de vida del activo
+        </h2>
+
+      </div>
+
+      <p
+        class="large-paragraph"
+        data-i18n="objectiveParagraph"
+      >
+        El objetivo es desarrollar un modelo BIM que permita visualizar la
+        implantación general, coordinar componentes, documentar decisiones de
+        diseño y estructurar información técnica que pueda ser reutilizada en
+        etapas posteriores de construcción, operación y mantenimiento.
+      </p>
+
+    </section>
+
+    <!-- Alcance -->
+
+    <section class="content-section">
+
+      <div class="content-heading">
+
+        <p
+          class="section-number"
+          data-i18n="scopeNumber"
+        >
+          03 · Alcance
+        </p>
+
+        <h2 data-i18n="scopeTitle">
+          Componentes principales del caso de estudio
+        </h2>
+
+      </div>
+
+      <div class="scope-grid">
+
+        <article class="scope-card">
+
+          <span class="scope-index">01</span>
+
+          <h3 data-i18n="scopeItem1Title">
+            Implantación general
+          </h3>
+
+          <p data-i18n="scopeItem1Description">
+            Organización espacial de calles, campos eléctricos, circulaciones,
+            edificios y áreas funcionales.
+          </p>
+
+        </article>
+
+        <article class="scope-card">
+
+          <span class="scope-index">02</span>
+
+          <h3 data-i18n="scopeItem2Title">
+            Equipos primarios
+          </h3>
+
+          <p data-i18n="scopeItem2Description">
+            Modelado de interruptores, seccionadores, transformadores de medida,
+            descargadores y transformadores de potencia.
+          </p>
+
+        </article>
+
+        <article class="scope-card">
+
+          <span class="scope-index">03</span>
+
+          <h3 data-i18n="scopeItem3Title">
+            Estructuras y conexiones
+          </h3>
+
+          <p data-i18n="scopeItem3Description">
+            Representación de pórticos, soportes, barras, conductores y conexiones
+            principales de la subestación.
+          </p>
+
+        </article>
+
+        <article class="scope-card">
+
+          <span class="scope-index">04</span>
+
+          <h3 data-i18n="scopeItem4Title">
+            Documentación técnica
+          </h3>
+
+          <p data-i18n="scopeItem4Description">
+            Generación de vistas, plantas, cortes, tablas y documentación vinculada
+            directamente al modelo.
+          </p>
+
+        </article>
+
+        <article class="scope-card">
+
+          <span class="scope-index">05</span>
+
+          <h3 data-i18n="scopeItem5Title">
+            Coordinación BIM
+          </h3>
+
+          <p data-i18n="scopeItem5Description">
+            Revisión interdisciplinaria, detección de interferencias y control de
+            coherencia geométrica e informacional.
+          </p>
+
+        </article>
+
+        <article class="scope-card">
+
+          <span class="scope-index">06</span>
+
+          <h3 data-i18n="scopeItem6Title">
+            Interoperabilidad
+          </h3>
+
+          <p data-i18n="scopeItem6Description">
+            Preparación del modelo para intercambios IFC y flujos de información
+            con otras herramientas.
+          </p>
+
+        </article>
+
+      </div>
+
+    </section>
+
+    <!-- Metodología -->
+
+    <section class="content-section dark-section">
+
+      <div class="content-heading">
+
+        <p
+          class="section-number"
+          data-i18n="methodologyNumber"
+        >
+          04 · Metodología
+        </p>
+
+        <h2 data-i18n="methodologyTitle">
+          Un flujo de trabajo orientado a coordinación, trazabilidad y calidad
+        </h2>
+
+      </div>
+
+      <div class="methodology-flow">
+
+        <article>
+
+          <span>01</span>
+
+          <h3 data-i18n="method1Title">
+            Definición del alcance
+          </h3>
+
+          <p data-i18n="method1Description">
+            Identificación de usos BIM, disciplinas, entregables y nivel de
+            información requerido.
+          </p>
+
+        </article>
+
+        <article>
+
+          <span>02</span>
+
+          <h3 data-i18n="method2Title">
+            Estructuración del modelo
+          </h3>
+
+          <p data-i18n="method2Description">
+            Organización de niveles, coordenadas, familias, parámetros y
+            clasificación de elementos.
+          </p>
+
+        </article>
+
+        <article>
+
+          <span>03</span>
+
+          <h3 data-i18n="method3Title">
+            Modelado y coordinación
+          </h3>
+
+          <p data-i18n="method3Description">
+            Desarrollo progresivo del modelo y revisión de interferencias entre
+            equipos, estructuras e instalaciones.
+          </p>
+
+        </article>
+
+        <article>
+
+          <span>04</span>
+
+          <h3 data-i18n="method4Title">
+            Validación y entrega
+          </h3>
+
+          <p data-i18n="method4Description">
+            Control geométrico, verificación de información y preparación de
+            documentación y modelos de intercambio.
+          </p>
+
+        </article>
+
+      </div>
+
+    </section>
+
+    <!-- Herramientas -->
+
+    <section class="content-section">
+
+      <div class="content-heading">
+
+        <p
+          class="section-number"
+          data-i18n="toolsNumber"
+        >
+          05 · Herramientas
+        </p>
+
+        <h2 data-i18n="toolsTitle">
+          Tecnologías utilizadas
+        </h2>
+
+      </div>
+
+      <div class="tools-grid">
+
+        <div class="tool-item">
+
+          <strong>Autodesk Revit</strong>
+
+          <span data-i18n="revitDescription">
+            Modelado BIM y documentación
+          </span>
+
+        </div>
+
+        <div class="tool-item">
+
+          <strong>AutoCAD</strong>
+
+          <span data-i18n="autocadDescription">
+            Información y documentación de referencia
+          </span>
+
+        </div>
+
+        <div class="tool-item">
+
+          <strong>Navisworks</strong>
+
+          <span data-i18n="navisworksDescription">
+            Coordinación y revisión interdisciplinaria
+          </span>
+
+        </div>
+
+        <div class="tool-item">
+
+          <strong>IFC</strong>
+
+          <span data-i18n="ifcDescription">
+            Intercambio abierto de información
+          </span>
+
+        </div>
+
+        <div class="tool-item">
+
+          <strong>Dynamo</strong>
+
+          <span data-i18n="dynamoDescription">
+            Automatización de tareas y control de información
+          </span>
+
+        </div>
+
+        <div class="tool-item">
+
+          <strong>Power BI</strong>
+
+          <span data-i18n="powerBiDescription">
+            Visualización y seguimiento de información
+          </span>
+
+        </div>
+
+      </div>
+
+    </section>
+
+    <!-- Galería -->
+
+    <section class="gallery-section">
+
+      <div class="content-heading">
+
+        <p
+          class="section-number"
+          data-i18n="galleryNumber"
+        >
+          06 · Galería
+        </p>
+
+        <h2 data-i18n="galleryTitle">
+          Imágenes del modelo y del proceso
+        </h2>
+
+        <p
+          class="gallery-introduction"
+          data-i18n="galleryIntroduction"
+        >
+          La galería será completada progresivamente con vistas generales,
+          detalles de equipos, coordinación y documentación obtenida del modelo.
+        </p>
+
+      </div>
+
+      <div class="gallery-grid">
+
+        <figure class="gallery-large">
+
+          <img
+            src="../images/projects/bim-substation-main.jpg"
+            alt="Vista general del modelo BIM de subestación"
+          >
+
+          <figcaption data-i18n="galleryCaption1">
+            Vista general de la implantación
+          </figcaption>
+
+        </figure>
+
+        <figure>
+
+          <img
+            src="../images/projects/bim-equipment.jpg"
+            alt="Equipamiento eléctrico modelado en Revit"
+          >
+
+          <figcaption data-i18n="galleryCaption2">
+            Equipamiento primario
+          </figcaption>
+
+        </figure>
+
+        <figure>
+
+          <img
+            src="../images/projects/bim-coordination.jpg"
+            alt="Coordinación BIM de la subestación"
+          >
+
+          <figcaption data-i18n="galleryCaption3">
+            Coordinación interdisciplinaria
+          </figcaption>
+
+        </figure>
+
+      </div>
+
+    </section>
+
+    <!-- Resultados -->
+
+    <section class="content-section result-section">
+
+      <div class="content-heading">
+
+        <p
+          class="section-number"
+          data-i18n="resultsNumber"
+        >
+          07 · Resultados
+        </p>
+
+        <h2 data-i18n="resultsTitle">
+          Un modelo digital orientado a mejorar el desarrollo del proyecto
+        </h2>
+
+      </div>
+
+      <div class="result-grid">
+
+        <div>
+
+          <strong data-i18n="result1Title">
+            Mejor coordinación
+          </strong>
+
+          <p data-i18n="result1Description">
+            Visualización conjunta de disciplinas y detección temprana de
+            interferencias.
+          </p>
+
+        </div>
+
+        <div>
+
+          <strong data-i18n="result2Title">
+            Información centralizada
+          </strong>
+
+          <p data-i18n="result2Description">
+            Datos técnicos asociados directamente a los elementos del modelo.
+          </p>
+
+        </div>
+
+        <div>
+
+          <strong data-i18n="result3Title">
+            Documentación coherente
+          </strong>
+
+          <p data-i18n="result3Description">
+            Planos, cortes y tablas actualizados a partir de una única fuente de
+            información.
+          </p>
+
+        </div>
+
+        <div>
+
+          <strong data-i18n="result4Title">
+            Base para operación
+          </strong>
+
+          <p data-i18n="result4Description">
+            Estructura digital preparada para incorporar información de activos y
+            mantenimiento.
+          </p>
+
+        </div>
+
+      </div>
+
+    </section>
+
+    <!-- Navegación final -->
+
+    <section class="next-project-section">
+
+      <p data-i18n="nextProjectLabel">
+        Próximo caso de estudio
+      </p>
+
+      <a href="asset-reliability-dashboard.html">
+
+        <span data-i18n="nextProjectTitle">
+          Dashboard de gestión y confiabilidad de activos
+        </span>
+
+        <strong aria-hidden="true">→</strong>
+
+      </a>
+
+    </section>
+
+  </main>
+
+  <footer class="project-footer">
+
+    <div>
+
+      <strong>Pablo Boggetti</strong>
+
+      <p data-i18n="footerText">
+        Ingeniería Eléctrica · BIM · Confiabilidad · Analítica de Datos
+      </p>
+
+    </div>
+
+    <div>
+
+      <a href="mailto:pablo_boggetti@hotmail.com">
+        pablo_boggetti@hotmail.com
+      </a>
+
+      <a
+        href="https://www.linkedin.com/in/pablo-boggetti-5958754b/"
+        target="_blank"
+        rel="noopener noreferrer"
+      >
+        LinkedIn
+      </a>
+
+    </div>
+
+  </footer>
+
+  <script src="../js/project-bim.js"></script>
 
 </body>
 
