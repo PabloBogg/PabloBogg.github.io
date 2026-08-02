@@ -1224,16 +1224,18 @@ grid-template-columns:1fr;
 ======================================================*/
 
 .research-section{
-    width:min(var(--max-width),calc(100% - 48px));
+    max-width:880px;
+    width:calc(100% - 48px);
     margin:0 auto;
     padding:110px 0;
 }
 
 .research-grid{
     display:grid;
-    grid-template-columns:repeat(2,minmax(0,1fr));
-    gap:22px;
-    margin-top:55px;
+    grid-template-columns:repeat(2,1fr);
+    gap:18px;
+    max-width:760px;
+    margin:55px auto 0;
 }
 
 .research-card{
@@ -1314,4 +1316,11 @@ grid-template-columns:1fr;
 grid-template-columns:1fr;
 }
 
+}
+.research-section .section-heading{
+    max-width:760px;
+}
+
+.research-section .section-introduction{
+    max-width:700px;
 }
