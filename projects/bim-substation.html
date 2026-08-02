@@ -36,8 +36,6 @@
 
 <body>
 
-  <!-- NAVEGACIÓN -->
-
   <header class="project-header">
 
     <nav class="project-navbar">
@@ -58,11 +56,7 @@
           Volver al portfolio
         </a>
 
-        <div
-          class="language-selector"
-          role="group"
-          aria-label="Selector de idioma"
-        >
+        <div class="language-selector">
 
           <button
             class="language-button active"
@@ -94,7 +88,7 @@
 
   <main>
 
-    <!-- PORTADA -->
+    <!-- HERO -->
 
     <section class="project-hero">
 
@@ -142,15 +136,15 @@
 
     </section>
 
-    <!-- FICHA TÉCNICA -->
+    <!-- RESUMEN -->
 
     <section class="project-summary">
 
-      <div class="summary-label">
+      <div class="summary-card">
 
-        <p data-i18n="projectLabel">
+        <span data-i18n="projectLabel">
           Proyecto
-        </p>
+        </span>
 
         <strong data-i18n="projectValue">
           Modelado BIM de subestación
@@ -158,11 +152,11 @@
 
       </div>
 
-      <div class="summary-label">
+      <div class="summary-card">
 
-        <p data-i18n="voltageLabel">
+        <span data-i18n="voltageLabel">
           Nivel de tensión
-        </p>
+        </span>
 
         <strong>
           132 kV
@@ -170,11 +164,11 @@
 
       </div>
 
-      <div class="summary-label">
+      <div class="summary-card">
 
-        <p data-i18n="roleLabel">
+        <span data-i18n="roleLabel">
           Rol
-        </p>
+        </span>
 
         <strong data-i18n="roleValue">
           Modelador BIM
@@ -182,11 +176,11 @@
 
       </div>
 
-      <div class="summary-label">
+      <div class="summary-card">
 
-        <p data-i18n="softwareLabel">
+        <span data-i18n="softwareLabel">
           Software principal
-        </p>
+        </span>
 
         <strong>
           Autodesk Revit
@@ -196,17 +190,17 @@
 
     </section>
 
-    <!-- CONTEXTO -->
+    <!-- PROYECTO -->
 
-    <section class="content-section">
+    <section class="project-section">
 
-      <div class="content-heading">
+      <div class="section-heading">
 
         <p
           class="section-number"
           data-i18n="contextNumber"
         >
-          01 · Contexto
+          01 · El proyecto
         </p>
 
         <h2 data-i18n="contextTitle">
@@ -215,7 +209,7 @@
 
       </div>
 
-      <div class="content-columns">
+      <div class="project-introduction">
 
         <p data-i18n="contextParagraph1">
           Las subestaciones eléctricas incluyen equipos y estructuras que deben
@@ -233,126 +227,44 @@
 
     </section>
 
-    <!-- COMPARACIÓN INFORMACIÓN 2D Y MODELO -->
-
-    <section class="case-image-section alternate-section">
-
-      <div class="case-image-heading">
-
-        <p
-          class="section-number"
-          data-i18n="challengeNumber"
-        >
-          02 · Del dibujo al modelo
-        </p>
-
-        <h2 data-i18n="challengeTitle">
-          Transformación de información gráfica en una representación tridimensional
-        </h2>
-
-        <p data-i18n="challengeDescription">
-          La información disponible se utilizó como referencia para construir
-          progresivamente el modelo y representar la configuración general de
-          la instalación.
-        </p>
-
-      </div>
-
-      <figure class="case-image-full">
-
-        <img
-          src="../images/projects/bim-before-after.jpg"
-          alt="Comparación entre información gráfica y modelo BIM de la subestación"
-        >
-
-        <figcaption data-i18n="beforeAfterCaption">
-          Comparación entre la información de referencia y el modelo BIM
-        </figcaption>
-
-      </figure>
-
-    </section>
-
     <!-- OBJETIVO -->
 
-    <section class="content-section">
+    <section class="project-section project-section-light">
 
-      <div class="content-heading">
+      <div class="section-heading">
 
         <p
           class="section-number"
           data-i18n="objectiveNumber"
         >
-          03 · Objetivo
+          02 · Objetivo
         </p>
 
         <h2 data-i18n="objectiveTitle">
           Desarrollar un modelo BIM organizado y navegable
         </h2>
 
-      </div>
-
-      <p
-        class="large-paragraph"
-        data-i18n="objectiveParagraph"
-      >
-        El objetivo fue modelar en Revit los principales elementos de una
-        subestación eléctrica de 132 kV, logrando una representación
-        tridimensional clara de su configuración general.
-      </p>
-
-    </section>
-
-    <!-- VISTA GENERAL -->
-
-    <section class="case-image-section alternate-section">
-
-      <div class="case-image-heading">
-
-        <p
-          class="section-number"
-          data-i18n="overviewNumber"
-        >
-          04 · Configuración general
-        </p>
-
-        <h2 data-i18n="overviewTitle">
-          Vista general del modelo de la subestación
-        </h2>
-
-        <p data-i18n="overviewDescription">
-          La vista superior permite comprender la implantación, la ubicación de
-          los equipos y la relación espacial entre los principales componentes.
+        <p data-i18n="objectiveParagraph">
+          El objetivo fue modelar en Revit los principales elementos de una
+          subestación eléctrica de 132 kV, logrando una representación
+          tridimensional clara de su configuración general.
         </p>
 
       </div>
 
-      <figure class="case-image-full">
-
-        <img
-          src="../images/projects/bim-overview-top.jpg"
-          alt="Vista superior del modelo BIM de la subestación de 132 kV"
-        >
-
-        <figcaption data-i18n="overviewCaption">
-          Vista superior de la implantación
-        </figcaption>
-
-      </figure>
-
     </section>
 
-    <!-- MI PARTICIPACIÓN -->
+    <!-- PARTICIPACIÓN -->
 
-    <section class="content-section">
+    <section class="project-section">
 
-      <div class="content-heading">
+      <div class="section-heading">
 
         <p
           class="section-number"
           data-i18n="participationNumber"
         >
-          05 · Mi participación
+          03 · Mi participación
         </p>
 
         <h2 data-i18n="participationTitle">
@@ -361,13 +273,11 @@
 
       </div>
 
-      <div class="scope-grid">
+      <div class="participation-grid">
 
-        <article class="scope-card">
+        <article class="info-card">
 
-          <span class="scope-index">
-            01
-          </span>
+          <span>01</span>
 
           <h3 data-i18n="participationItem1Title">
             Modelado en Revit
@@ -380,11 +290,9 @@
 
         </article>
 
-        <article class="scope-card">
+        <article class="info-card">
 
-          <span class="scope-index">
-            02
-          </span>
+          <span>02</span>
 
           <h3 data-i18n="participationItem2Title">
             Equipamiento eléctrico
@@ -397,11 +305,9 @@
 
         </article>
 
-        <article class="scope-card">
+        <article class="info-card">
 
-          <span class="scope-index">
-            03
-          </span>
+          <span>03</span>
 
           <h3 data-i18n="participationItem3Title">
             Estructuras
@@ -414,11 +320,9 @@
 
         </article>
 
-        <article class="scope-card">
+        <article class="info-card">
 
-          <span class="scope-index">
-            04
-          </span>
+          <span>04</span>
 
           <h3 data-i18n="participationItem4Title">
             Organización del modelo
@@ -435,157 +339,184 @@
 
     </section>
 
-    <!-- EQUIPAMIENTO -->
+    <!-- DESARROLLO DEL MODELO -->
 
-    <section class="visual-story-section alternate-section">
+    <section class="project-section project-section-light">
 
-      <div class="visual-story-content">
+      <div class="section-heading">
 
         <p
           class="section-number"
-          data-i18n="equipmentNumber"
+          data-i18n="galleryNumber"
         >
-          06 · Equipamiento eléctrico
+          04 · Desarrollo del modelo
         </p>
 
-        <h2 data-i18n="equipmentTitle">
-          Representación de los principales equipos
+        <h2 data-i18n="galleryTitle">
+          Imágenes del proceso y del resultado
         </h2>
 
-        <p data-i18n="equipmentDescription">
-          Los equipos eléctricos fueron incorporados y ubicados dentro del modelo
-          para representar la configuración general del patio de 132 kV.
+        <p data-i18n="galleryIntroduction">
+          Vistas generales, detalles y documentación obtenidos a partir del
+          modelo desarrollado en Autodesk Revit.
         </p>
 
       </div>
 
-      <figure class="visual-story-image">
+      <div class="project-gallery">
 
-        <img
-          src="../images/projects/bim-equipment.jpg"
-          alt="Equipamiento eléctrico modelado en Autodesk Revit"
-        >
+        <figure class="gallery-card">
 
-        <figcaption data-i18n="equipmentCaption">
-          Equipamiento eléctrico representado en el modelo
-        </figcaption>
+          <div class="gallery-image">
 
-      </figure>
+            <img
+              src="../images/projects/bim-substation-main.jpg"
+              alt="Vista general de la subestación modelada en Revit"
+            >
 
-    </section>
+          </div>
 
-    <!-- TRANSFORMADOR -->
+          <figcaption data-i18n="galleryCaption1">
+            Vista general de la subestación
+          </figcaption>
 
-    <section class="visual-story-section reverse">
+        </figure>
 
-      <figure class="visual-story-image">
+        <figure class="gallery-card">
 
-        <img
-          src="../images/projects/bim-transformer.jpg"
-          alt="Transformador representado en el modelo BIM"
-        >
+          <div class="gallery-image">
 
-        <figcaption data-i18n="transformerCaption">
-          Detalle del transformador
-        </figcaption>
+            <img
+              src="../images/projects/bim-overview-top.jpg"
+              alt="Vista superior del modelo BIM de la subestación"
+            >
 
-      </figure>
+          </div>
 
-      <div class="visual-story-content">
+          <figcaption data-i18n="overviewCaption">
+            Vista superior de la implantación
+          </figcaption>
 
-        <p
-          class="section-number"
-          data-i18n="transformerNumber"
-        >
-          07 · Transformador
-        </p>
+        </figure>
 
-        <h2 data-i18n="transformerTitle">
-          Detalle de uno de los equipos principales
-        </h2>
+        <figure class="gallery-card">
 
-        <p data-i18n="transformerDescription">
-          El modelado permite observar el equipo dentro de su contexto y revisar
-          visualmente su ubicación respecto de las estructuras y elementos próximos.
-        </p>
+          <div class="gallery-image">
 
-      </div>
+            <img
+              src="../images/projects/bim-before-after.jpg"
+              alt="Comparación entre información gráfica y modelo BIM"
+            >
 
-    </section>
+          </div>
 
-    <!-- EDIFICIO DE CONTROL -->
+          <figcaption data-i18n="beforeAfterCaption">
+            Comparación entre referencia y modelo
+          </figcaption>
 
-    <section class="visual-story-section alternate-section">
+        </figure>
 
-      <div class="visual-story-content">
+        <figure class="gallery-card">
 
-        <p
-          class="section-number"
-          data-i18n="controlBuildingNumber"
-        >
-          08 · Edificio de control
-        </p>
+          <div class="gallery-image">
 
-        <h2 data-i18n="controlBuildingTitle">
-          Incorporación de la infraestructura complementaria
-        </h2>
+            <img
+              src="../images/projects/bim-equipment.jpg"
+              alt="Equipamiento eléctrico modelado en Revit"
+            >
 
-        <p data-i18n="controlBuildingDescription">
-          El edificio de control fue incluido dentro del modelo para completar
-          la representación general de la subestación.
-        </p>
+          </div>
 
-      </div>
+          <figcaption data-i18n="equipmentCaption">
+            Equipamiento eléctrico
+          </figcaption>
 
-      <figure class="visual-story-image">
+        </figure>
 
-        <img
-          src="../images/projects/bim-control-building.jpg"
-          alt="Edificio de control modelado en Revit"
-        >
+        <figure class="gallery-card">
 
-        <figcaption data-i18n="controlBuildingCaption">
-          Edificio de control
-        </figcaption>
+          <div class="gallery-image">
 
-      </figure>
+            <img
+              src="../images/projects/bim-transformer.jpg"
+              alt="Transformador modelado en Revit"
+            >
 
-    </section>
+          </div>
 
-    <!-- ESTRUCTURAS -->
+          <figcaption data-i18n="transformerCaption">
+            Detalle del transformador
+          </figcaption>
 
-    <section class="visual-story-section reverse">
+        </figure>
 
-      <figure class="visual-story-image">
+        <figure class="gallery-card">
 
-        <img
-          src="../images/projects/bim-structures.jpg"
-          alt="Estructuras metálicas de la subestación modeladas en Revit"
-        >
+          <div class="gallery-image">
 
-        <figcaption data-i18n="structuresCaption">
-          Pórticos, soportes y estructuras visibles
-        </figcaption>
+            <img
+              src="../images/projects/bim-control-building.jpg"
+              alt="Edificio de control modelado en Revit"
+            >
 
-      </figure>
+          </div>
 
-      <div class="visual-story-content">
+          <figcaption data-i18n="controlBuildingCaption">
+            Edificio de control
+          </figcaption>
 
-        <p
-          class="section-number"
-          data-i18n="structuresNumber"
-        >
-          09 · Estructuras
-        </p>
+        </figure>
 
-        <h2 data-i18n="structuresTitle">
-          Modelado de elementos de soporte
-        </h2>
+        <figure class="gallery-card">
 
-        <p data-i18n="structuresDescription">
-          Las estructuras se incorporaron para representar la relación entre
-          equipos, soportes y configuración general de la instalación.
-        </p>
+          <div class="gallery-image">
+
+            <img
+              src="../images/projects/bim-structures.jpg"
+              alt="Estructuras metálicas modeladas en Revit"
+            >
+
+          </div>
+
+          <figcaption data-i18n="structuresCaption">
+            Estructuras metálicas
+          </figcaption>
+
+        </figure>
+
+        <figure class="gallery-card">
+
+          <div class="gallery-image">
+
+            <img
+              src="../images/projects/bim-revit-workspace.jpg"
+              alt="Modelo dentro del entorno de Autodesk Revit"
+            >
+
+          </div>
+
+          <figcaption data-i18n="workspaceCaption">
+            Entorno de modelado en Autodesk Revit
+          </figcaption>
+
+        </figure>
+
+        <figure class="gallery-card">
+
+          <div class="gallery-image">
+
+            <img
+              src="../images/projects/bim-sheet.jpg"
+              alt="Lámina generada desde el modelo BIM"
+            >
+
+          </div>
+
+          <figcaption data-i18n="sheetCaption">
+            Lámina preparada desde el modelo
+          </figcaption>
+
+        </figure>
 
       </div>
 
@@ -593,186 +524,104 @@
 
     <!-- FLUJO DE TRABAJO -->
 
-    <section class="content-section dark-section">
+    <section class="workflow-section">
 
-      <div class="content-heading">
+      <div class="workflow-container">
 
-        <p
-          class="section-number"
-          data-i18n="workflowNumber"
-        >
-          10 · Flujo de trabajo
-        </p>
+        <div class="section-heading section-heading-dark">
 
-        <h2 data-i18n="workflowTitle">
-          Proceso utilizado para desarrollar el modelo
-        </h2>
-
-      </div>
-
-      <div class="methodology-flow">
-
-        <article>
-
-          <span>
-            01
-          </span>
-
-          <h3 data-i18n="workflowItem1Title">
-            Revisión de información
-          </h3>
-
-          <p data-i18n="workflowItem1Description">
-            Análisis de la información y referencias disponibles para comprender
-            la configuración de la instalación.
+          <p
+            class="section-number"
+            data-i18n="workflowNumber"
+          >
+            05 · Flujo de trabajo
           </p>
 
-        </article>
+          <h2 data-i18n="workflowTitle">
+            Proceso utilizado para desarrollar el modelo
+          </h2>
 
-        <article>
+        </div>
 
-          <span>
-            02
-          </span>
+        <div class="workflow-grid">
 
-          <h3 data-i18n="workflowItem2Title">
-            Preparación del modelo
-          </h3>
+          <article>
 
-          <p data-i18n="workflowItem2Description">
-            Configuración inicial del archivo, niveles, vistas y organización
-            general del proyecto.
-          </p>
+            <span>01</span>
 
-        </article>
+            <h3 data-i18n="workflowItem1Title">
+              Revisión de información
+            </h3>
 
-        <article>
+            <p data-i18n="workflowItem1Description">
+              Análisis de la información y referencias disponibles para comprender
+              la configuración de la instalación.
+            </p>
 
-          <span>
-            03
-          </span>
+          </article>
 
-          <h3 data-i18n="workflowItem3Title">
-            Modelado
-          </h3>
+          <article>
 
-          <p data-i18n="workflowItem3Description">
-            Desarrollo progresivo de equipos, estructuras y demás elementos
-            incluidos en el alcance.
-          </p>
+            <span>02</span>
 
-        </article>
+            <h3 data-i18n="workflowItem2Title">
+              Preparación del modelo
+            </h3>
 
-        <article>
+            <p data-i18n="workflowItem2Description">
+              Configuración inicial del archivo, niveles, vistas y organización
+              general del proyecto.
+            </p>
 
-          <span>
-            04
-          </span>
+          </article>
 
-          <h3 data-i18n="workflowItem4Title">
-            Revisión visual
-          </h3>
+          <article>
 
-          <p data-i18n="workflowItem4Description">
-            Comprobación de la ubicación, orientación y relación entre los
-            principales componentes modelados.
-          </p>
+            <span>03</span>
 
-        </article>
+            <h3 data-i18n="workflowItem3Title">
+              Modelado
+            </h3>
 
-      </div>
+            <p data-i18n="workflowItem3Description">
+              Desarrollo progresivo de equipos, estructuras y demás elementos
+              incluidos en el alcance.
+            </p>
 
-    </section>
+          </article>
 
-    <!-- ENTORNO DE REVIT -->
+          <article>
 
-    <section class="case-image-section">
+            <span>04</span>
 
-      <div class="case-image-heading">
+            <h3 data-i18n="workflowItem4Title">
+              Revisión visual
+            </h3>
 
-        <p
-          class="section-number"
-          data-i18n="workspaceNumber"
-        >
-          11 · Entorno de trabajo
-        </p>
+            <p data-i18n="workflowItem4Description">
+              Comprobación de la ubicación, orientación y relación entre los
+              principales componentes modelados.
+            </p>
 
-        <h2 data-i18n="workspaceTitle">
-          Desarrollo del modelo dentro de Autodesk Revit
-        </h2>
+          </article>
 
-        <p data-i18n="workspaceDescription">
-          La captura permite observar el modelo dentro del entorno de trabajo,
-          junto con las herramientas utilizadas para organizar y revisar los elementos.
-        </p>
+        </div>
 
       </div>
-
-      <figure class="case-image-full">
-
-        <img
-          src="../images/projects/bim-revit-workspace.jpg"
-          alt="Modelo de la subestación dentro del entorno de Autodesk Revit"
-        >
-
-        <figcaption data-i18n="workspaceCaption">
-          Entorno de modelado en Autodesk Revit
-        </figcaption>
-
-      </figure>
-
-    </section>
-
-    <!-- DOCUMENTACIÓN -->
-
-    <section class="case-image-section alternate-section">
-
-      <div class="case-image-heading">
-
-        <p
-          class="section-number"
-          data-i18n="sheetNumber"
-        >
-          12 · Documentación
-        </p>
-
-        <h2 data-i18n="sheetTitle">
-          Presentación gráfica obtenida desde el modelo
-        </h2>
-
-        <p data-i18n="sheetDescription">
-          Las vistas generadas permiten presentar el modelo y comunicar
-          gráficamente la configuración de la instalación.
-        </p>
-
-      </div>
-
-      <figure class="case-image-full">
-
-        <img
-          src="../images/projects/bim-sheet.jpg"
-          alt="Lámina generada a partir del modelo BIM de la subestación"
-        >
-
-        <figcaption data-i18n="sheetCaption">
-          Lámina preparada a partir de vistas del modelo
-        </figcaption>
-
-      </figure>
 
     </section>
 
     <!-- HERRAMIENTAS -->
 
-    <section class="content-section">
+    <section class="project-section">
 
-      <div class="content-heading">
+      <div class="section-heading">
 
         <p
           class="section-number"
           data-i18n="toolsNumber"
         >
-          13 · Herramientas
+          06 · Herramientas
         </p>
 
         <h2 data-i18n="toolsTitle">
@@ -783,41 +632,41 @@
 
       <div class="tools-grid">
 
-        <div class="tool-item">
+        <article class="tool-card">
 
           <strong>
             Autodesk Revit
           </strong>
 
-          <span data-i18n="revitDescription">
-            Modelado tridimensional y organización del modelo BIM
-          </span>
+          <p data-i18n="revitDescription">
+            Modelado tridimensional y organización del modelo BIM.
+          </p>
 
-        </div>
+        </article>
 
-        <div class="tool-item">
+        <article class="tool-card">
 
           <strong>
             AutoCAD
           </strong>
 
-          <span data-i18n="autocadDescription">
-            Consulta de información gráfica y documentación de referencia
-          </span>
+          <p data-i18n="autocadDescription">
+            Consulta de información gráfica y documentación de referencia.
+          </p>
 
-        </div>
+        </article>
 
-        <div class="tool-item">
+        <article class="tool-card">
 
           <strong data-i18n="bimMethodologyTitle">
             Metodología BIM
           </strong>
 
-          <span data-i18n="bimMethodologyDescription">
-            Organización digital de los elementos y de la información del modelo
-          </span>
+          <p data-i18n="bimMethodologyDescription">
+            Organización digital de los elementos y de la información del modelo.
+          </p>
 
-        </div>
+        </article>
 
       </div>
 
@@ -825,15 +674,15 @@
 
     <!-- RESULTADOS -->
 
-    <section class="content-section result-section">
+    <section class="project-section project-section-light">
 
-      <div class="content-heading">
+      <div class="section-heading">
 
         <p
           class="section-number"
           data-i18n="resultsNumber"
         >
-          14 · Resultado
+          07 · Resultado
         </p>
 
         <h2 data-i18n="resultsTitle">
@@ -842,9 +691,9 @@
 
       </div>
 
-      <div class="result-grid">
+      <div class="results-grid">
 
-        <div>
+        <article class="result-card">
 
           <strong data-i18n="result1Title">
             Modelo navegable
@@ -855,22 +704,21 @@
             componentes.
           </p>
 
-        </div>
+        </article>
 
-        <div>
+        <article class="result-card">
 
           <strong data-i18n="result2Title">
-            Mejor comprensión espacial
+            Comprensión espacial
           </strong>
 
           <p data-i18n="result2Description">
-            Lectura más clara de la ubicación y relación entre equipos y
-            estructuras.
+            Lectura más clara de la ubicación y relación entre equipos y estructuras.
           </p>
 
-        </div>
+        </article>
 
-        <div>
+        <article class="result-card">
 
           <strong data-i18n="result3Title">
             Información organizada
@@ -880,26 +728,26 @@
             Estructuración de los elementos dentro de un entorno BIM.
           </p>
 
-        </div>
+        </article>
 
-        <div>
+        <article class="result-card">
 
           <strong data-i18n="result4Title">
             Base digital
           </strong>
 
           <p data-i18n="result4Description">
-            Modelo preparado para continuar incorporando información o
-            documentación cuando sea necesario.
+            Modelo preparado para continuar incorporando información cuando
+            sea necesario.
           </p>
 
-        </div>
+        </article>
 
       </div>
 
     </section>
 
-    <!-- PRÓXIMO PROYECTO -->
+    <!-- SIGUIENTE PROYECTO -->
 
     <section class="next-project-section">
 
@@ -922,8 +770,6 @@
     </section>
 
   </main>
-
-  <!-- FOOTER -->
 
   <footer class="project-footer">
 
