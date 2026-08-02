@@ -455,7 +455,9 @@ button {
 .project-gallery {
   display: grid;
   grid-template-columns: repeat(3, minmax(0, 1fr));
-  gap: 24px;
+  gap: 20px;
+  max-width: 900px;
+  margin: 0 auto;
 }
 
 .gallery-card {
@@ -495,8 +497,8 @@ button {
 }
 
 .gallery-card figcaption {
-  min-height: 64px;
-  padding: 18px 20px;
+  min-height: 56px;
+  padding: 14px 16px;
   color: var(--color-primary);
   font-size: 0.87rem;
   font-weight: 600;
