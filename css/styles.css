@@ -1062,3 +1062,142 @@ textarea {
     padding-bottom: 65px;
   }
 }
+
+/*======================================================
+  ABOUT
+======================================================*/
+
+.about-section{
+    width:min(var(--max-width),calc(100% - 48px));
+    margin:0 auto;
+    padding:110px 0;
+}
+
+.about-heading{
+    max-width:900px;
+    margin-bottom:55px;
+}
+
+.about-content{
+    display:grid;
+    grid-template-columns:1.05fr .95fr;
+    gap:60px;
+    align-items:start;
+}
+
+.about-text{
+    display:flex;
+    flex-direction:column;
+    gap:22px;
+}
+
+.about-text p{
+    margin:0;
+    color:var(--color-text-soft);
+    line-height:1.85;
+    font-size:1rem;
+}
+
+.about-highlights{
+    display:grid;
+    grid-template-columns:repeat(2,minmax(0,1fr));
+    gap:18px;
+}
+
+.about-card{
+    padding:26px;
+    border:1px solid var(--color-border);
+    border-radius:var(--radius-medium);
+    background:white;
+    transition:.25s;
+}
+
+.about-card:hover{
+    transform:translateY(-5px);
+    box-shadow:var(--shadow-soft);
+    border-color:rgba(91,159,138,.35);
+}
+
+.about-icon{
+    font-size:1.7rem;
+    display:block;
+    margin-bottom:18px;
+}
+
+.about-card h3{
+    margin:0 0 10px;
+    color:var(--color-primary);
+    font-size:1.15rem;
+}
+
+.about-card p{
+    margin:0;
+    color:var(--color-text-soft);
+    font-size:.92rem;
+    line-height:1.7;
+}
+
+.about-timeline{
+    margin-top:70px;
+    display:grid;
+    grid-template-columns:repeat(4,minmax(0,1fr));
+    gap:22px;
+}
+
+.timeline-item{
+    padding:28px;
+    border:1px solid var(--color-border);
+    border-radius:var(--radius-medium);
+    background:white;
+    transition:.25s;
+}
+
+.timeline-item:hover{
+    transform:translateY(-5px);
+    box-shadow:var(--shadow-soft);
+}
+
+.timeline-item span{
+    display:block;
+    margin-bottom:10px;
+    color:var(--color-accent);
+    font-size:.78rem;
+    font-weight:700;
+    letter-spacing:.08em;
+}
+
+.timeline-item h3{
+    margin:0 0 12px;
+    color:var(--color-primary);
+}
+
+.timeline-item p{
+    margin:0;
+    color:var(--color-text-soft);
+    line-height:1.65;
+    font-size:.9rem;
+}
+
+@media(max-width:1000px){
+
+.about-content{
+grid-template-columns:1fr;
+}
+
+.about-timeline{
+grid-template-columns:repeat(2,1fr);
+}
+
+}
+
+@media(max-width:700px){
+
+.about-highlights{
+grid-template-columns:1fr;
+}
+
+.about-timeline{
+grid-template-columns:1fr;
+}
+
+}
