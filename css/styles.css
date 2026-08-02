@@ -1076,8 +1076,13 @@ textarea {
 
 .about-heading{
     max-width:760px;
-    margin:0 auto 55px;
-    text-align:center;
+    margin:0 0 55px;
+    text-align:left;
+}
+.about-heading h2{
+    font-size:clamp(2.15rem,4vw,3.55rem);
+    line-height:1.12;
+    letter-spacing:-0.043em;
 }
 
 .about-content{
@@ -1085,8 +1090,8 @@ textarea {
 }
 
 .about-text{
-    max-width:680px;
-    margin:0 auto 50px;
+    max-width:760px;
+    margin:0 0 50px;
 }
 
 .about-highlights{
