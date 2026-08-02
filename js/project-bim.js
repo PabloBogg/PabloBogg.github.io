@@ -69,7 +69,7 @@ const translations = {
     scopeItem4Description:
       "Preparación de vistas tridimensionales y gráficas para mostrar la configuración de la subestación.",
 
-    workflowNumber: "05 · Flujo de trabajo",
+    workflowNumber: "05 · Workflow",
     workflowTitle: "Proceso utilizado para desarrollar el modelo",
 
     workflowItem1Title: "Revisión de información",
@@ -88,7 +88,7 @@ const translations = {
     workflowItem4Description:
       "Comprobación de la ubicación, orientación y relación entre los principales componentes modelados.",
 
-    toolsNumber: "06 · Herramientas",
+    toolsNumber: "06 · Tools",
     toolsTitle: "Herramientas utilizadas",
     revitDescription:
       "Modelado tridimensional y organización del modelo BIM",
@@ -98,15 +98,15 @@ const translations = {
     bimMethodologyDescription:
       "Organización digital de los elementos y de la información del modelo",
 
-    galleryNumber: "07 · Galería",
-    galleryTitle: "Imágenes del modelo",
+    galleryNumber: "04 · Desarrollo del modelo",
+    galleryTitle: "Imágenes del proceso y del resultado",
     galleryIntroduction:
       "Vistas generales y detalles obtenidos a partir del modelo desarrollado en Autodesk Revit.",
     galleryCaption1: "Vista general de la subestación",
     galleryCaption2: "Equipamiento eléctrico",
     galleryCaption3: "Detalle del modelo",
 
-    resultsNumber: "08 · Resultado",
+    resultsNumber: "07 · Result",
     resultsTitle:
       "Representación tridimensional organizada de la subestación",
 
@@ -231,8 +231,8 @@ const translations = {
     bimMethodologyDescription:
       "Digital organization of model elements and information",
 
-    galleryNumber: "07 · Gallery",
-    galleryTitle: "Model images",
+    galleryNumber: "04 · Model development",
+    galleryTitle: "Process and result images",
     galleryIntroduction:
       "General views and details obtained from the model developed in Autodesk Revit.",
     galleryCaption1: "General substation view",
