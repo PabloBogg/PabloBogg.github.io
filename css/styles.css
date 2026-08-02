@@ -1079,11 +1079,7 @@ textarea {
     margin:0 0 55px;
     text-align:left;
 }
-.about-heading h2{
-    font-size:clamp(2.15rem,4vw,3.55rem);
-    line-height:1.12;
-    letter-spacing:-0.043em;
-}
+
 
 .about-content{
     display:block;
