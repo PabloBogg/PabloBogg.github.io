@@ -36,7 +36,7 @@ const translations = {
     aboutText:
       "Esta sección será desarrollada durante el Sprint 2.",
 
-    expertiseLabel: "Qué hago",
+    expertiseLabel: "Especialidades",
 
 expertiseTitle:
   "Ingeniería eléctrica, confiabilidad y soluciones digitales para infraestructuras energéticas.",
@@ -154,7 +154,7 @@ digitalItem4:
     aboutText:
       "This section will be developed during Sprint 2.",
 
-    expertiseLabel: "What I Do",
+    expertiseLabel: "Specialties",
 
 expertiseTitle:
   "Electrical engineering, reliability and digital solutions for energy infrastructure.",
