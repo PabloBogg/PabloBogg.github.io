@@ -1,1 +1,286 @@
-digital-twin.css 
+/* ==========================================================
+   DIGITAL TWIN
+   ========================================================== */
+
+.digital-hero {
+
+    background:
+        linear-gradient(rgba(8,18,34,.78), rgba(8,18,34,.82)),
+        url("../images/projects/digital-twin-banner.jpg") center center / cover no-repeat;
+
+}
+
+
+/* ==========================================================
+   SECCIONES
+   ========================================================== */
+
+.dashboard-frame,
+.viewer-frame {
+
+    width: 100%;
+    margin-top: 2rem;
+    border-radius: 18px;
+    overflow: hidden;
+
+    background: #0f172a;
+
+    border: 1px solid rgba(255,255,255,.08);
+
+    box-shadow:
+        0 15px 40px rgba(0,0,0,.25);
+
+}
+
+.dashboard-frame iframe,
+.viewer-frame iframe {
+
+    width: 100%;
+    height: 850px;
+
+    border: none;
+
+    display: block;
+
+}
+
+
+/* ==========================================================
+   GRID DIGITAL TWIN
+   ========================================================== */
+
+.digital-grid{
+
+    display:grid;
+
+    grid-template-columns: 1fr 1fr;
+
+    gap:2rem;
+
+    margin-top:3rem;
+
+}
+
+.digital-card{
+
+    background:#ffffff;
+
+    border-radius:18px;
+
+    overflow:hidden;
+
+    box-shadow:0 10px 30px rgba(0,0,0,.08);
+
+    border:1px solid rgba(0,0,0,.05);
+
+}
+
+.digital-card h3{
+
+    padding:22px 28px;
+
+    margin:0;
+
+    font-size:1.3rem;
+
+    border-bottom:1px solid #ececec;
+
+}
+
+.digital-card iframe{
+
+    width:100%;
+
+    height:750px;
+
+    border:none;
+
+}
+
+
+/* ==========================================================
+   INFORMACION
+   ========================================================== */
+
+.architecture-grid{
+
+    display:grid;
+
+    grid-template-columns:repeat(4,1fr);
+
+    gap:2rem;
+
+    margin-top:3rem;
+
+}
+
+.architecture-item{
+
+    padding:2rem;
+
+    background:white;
+
+    border-radius:18px;
+
+    text-align:center;
+
+    box-shadow:0 10px 30px rgba(0,0,0,.08);
+
+}
+
+.architecture-item span{
+
+    width:58px;
+
+    height:58px;
+
+    display:flex;
+
+    align-items:center;
+
+    justify-content:center;
+
+    margin:auto;
+
+    margin-bottom:1rem;
+
+    border-radius:50%;
+
+    background:#0d6efd;
+
+    color:white;
+
+    font-weight:700;
+
+    font-size:1.2rem;
+
+}
+
+.architecture-item h3{
+
+    margin-bottom:.8rem;
+
+}
+
+.architecture-item p{
+
+    color:#666;
+
+    line-height:1.6;
+
+}
+
+
+/* ==========================================================
+   BOTONES
+   ========================================================== */
+
+.digital-buttons{
+
+    display:flex;
+
+    justify-content:center;
+
+    gap:1rem;
+
+    margin-top:2.5rem;
+
+    flex-wrap:wrap;
+
+}
+
+.digital-button{
+
+    padding:14px 28px;
+
+    border-radius:10px;
+
+    background:#0d6efd;
+
+    color:white;
+
+    text-decoration:none;
+
+    font-weight:600;
+
+    transition:.25s;
+
+}
+
+.digital-button:hover{
+
+    background:#0b5ed7;
+
+    transform:translateY(-2px);
+
+}
+
+
+/* ==========================================================
+   RESPONSIVE
+   ========================================================== */
+
+@media (max-width:1200px){
+
+.digital-grid{
+
+grid-template-columns:1fr;
+
+}
+
+.dashboard-frame iframe,
+.viewer-frame iframe{
+
+height:700px;
+
+}
+
+.digital-card iframe{
+
+height:650px;
+
+}
+
+.architecture-grid{
+
+grid-template-columns:repeat(2,1fr);
+
+}
+
+}
+
+
+@media (max-width:768px){
+
+.architecture-grid{
+
+grid-template-columns:1fr;
+
+}
+
+.dashboard-frame iframe,
+.viewer-frame iframe{
+
+height:550px;
+
+}
+
+.digital-card iframe{
+
+height:500px;
+
+}
+
+.digital-buttons{
+
+flex-direction:column;
+
+}
+
+.digital-button{
+
+text-align:center;
+
+}
+
+}
