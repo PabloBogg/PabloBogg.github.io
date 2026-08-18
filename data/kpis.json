@@ -1,0 +1,14 @@
+[
+    {
+        "Total_Assets": 35,
+        "Average_Health_Index": 66.9,
+        "High_Risk_Assets": 8,
+        "Medium_Risk_Assets": 18,
+        "Low_Risk_Assets": 9,
+        "Active_Alarms": 16,
+        "Alarms_In_Followup": 148,
+        "Overdue_Maintenance": 0,
+        "Upcoming_Maintenance": 0,
+        "Assets_Requiring_Attention": 8
+    }
+]

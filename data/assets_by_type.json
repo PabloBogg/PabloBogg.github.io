@@ -1,0 +1,56 @@
+[
+    {
+        "Asset_Type": "Descargador",
+        "Asset_Count": 6,
+        "Average_Health_Index": 16.1,
+        "High_Risk_Assets": 6,
+        "Medium_Risk_Assets": 0,
+        "Low_Risk_Assets": 0,
+        "Active_Alarms": 16
+    },
+    {
+        "Asset_Type": "Interruptor",
+        "Asset_Count": 4,
+        "Average_Health_Index": 52.9,
+        "High_Risk_Assets": 1,
+        "Medium_Risk_Assets": 3,
+        "Low_Risk_Assets": 0,
+        "Active_Alarms": 0
+    },
+    {
+        "Asset_Type": "Seccionador",
+        "Asset_Count": 8,
+        "Average_Health_Index": 66.2,
+        "High_Risk_Assets": 1,
+        "Medium_Risk_Assets": 7,
+        "Low_Risk_Assets": 0,
+        "Active_Alarms": 0
+    },
+    {
+        "Asset_Type": "Transformador de Corriente",
+        "Asset_Count": 12,
+        "Average_Health_Index": 89.4,
+        "High_Risk_Assets": 0,
+        "Medium_Risk_Assets": 5,
+        "Low_Risk_Assets": 7,
+        "Active_Alarms": 0
+    },
+    {
+        "Asset_Type": "Transformador de Potencia",
+        "Asset_Count": 2,
+        "Average_Health_Index": 82.0,
+        "High_Risk_Assets": 0,
+        "Medium_Risk_Assets": 2,
+        "Low_Risk_Assets": 0,
+        "Active_Alarms": 0
+    },
+    {
+        "Asset_Type": "Transformador de Tension",
+        "Asset_Count": 3,
+        "Average_Health_Index": 89.7,
+        "High_Risk_Assets": 0,
+        "Medium_Risk_Assets": 1,
+        "Low_Risk_Assets": 2,
+        "Active_Alarms": 0
+    }
+]

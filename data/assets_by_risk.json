@@ -1,0 +1,23 @@
+[
+    {
+        "Risk_Level": "ALTO",
+        "Asset_Count": 8,
+        "Average_Health_Index": 18.5,
+        "Active_Alarms": 16,
+        "Maintenance_Observations": 268
+    },
+    {
+        "Risk_Level": "MEDIO",
+        "Asset_Count": 18,
+        "Average_Health_Index": 76.0,
+        "Active_Alarms": 0,
+        "Maintenance_Observations": 335
+    },
+    {
+        "Risk_Level": "BAJO",
+        "Asset_Count": 9,
+        "Average_Health_Index": 91.9,
+        "Active_Alarms": 0,
+        "Maintenance_Observations": 152
+    }
+]
