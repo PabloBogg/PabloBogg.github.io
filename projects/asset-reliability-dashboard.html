@@ -39,7 +39,88 @@
 <h2>Dashboard Operativo</h2>
 </div>
 <div class="dashboard-frame">
-<iframe src="PEGAR_AQUI_URL_DATABRICKS" allowfullscreen loading="lazy"></iframe>
+
+    <div id="digital-dashboard">
+
+        <!-- ================= KPIs ================= -->
+
+        <section class="dashboard-kpis">
+
+            <div class="kpi-card">
+
+                <span>Índice de Salud</span>
+
+                <strong id="health-index">--</strong>
+
+            </div>
+
+            <div class="kpi-card">
+
+                <span>Total Activos</span>
+
+                <strong id="total-assets">--</strong>
+
+            </div>
+
+            <div class="kpi-card">
+
+                <span>Riesgo Alto</span>
+
+                <strong id="high-risk-assets">--</strong>
+
+            </div>
+
+            <div class="kpi-card">
+
+                <span>Alarmas Activas</span>
+
+                <strong id="active-alarms">--</strong>
+
+            </div>
+
+        </section>
+
+
+        <!-- ================= GRAFICOS ================= -->
+
+        <section class="dashboard-grid">
+
+            <div class="chart-card">
+
+                <h3>Distribución de Riesgo</h3>
+
+                <div id="risk-chart"></div>
+
+            </div>
+
+            <div class="chart-card">
+
+                <h3>Activos por Tipo</h3>
+
+                <div id="type-chart"></div>
+
+            </div>
+
+            <div class="chart-card">
+
+                <h3>Top Activos Críticos</h3>
+
+                <div id="critical-chart"></div>
+
+            </div>
+
+            <div class="chart-card">
+
+                <h3>Mayor Temperatura</h3>
+
+                <div id="temperature-chart"></div>
+
+            </div>
+
+        </section>
+
+    </div>
+
 </div>
 </section>
 
@@ -77,6 +158,6 @@
 <div><strong>Pablo Boggetti</strong><p>Ingeniería Eléctrica · BIM · IA</p></div>
 <div><a href="mailto:pablo_boggetti@hotmail.com">pablo_boggetti@hotmail.com</a></div>
 </footer>
-
+<script src="https://cdn.jsdelivr.net/npm/echarts@5/dist/echarts.min.js"></script>
 <script src="../js/digital-twin.js"></script>
 </body></html>
