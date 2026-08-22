@@ -341,3 +341,37 @@ height:65vh;
 }
 
 }
+
+.user-message{
+
+    background:#2563eb;
+
+    color:white;
+
+    padding:18px;
+
+    border-radius:15px;
+
+    margin-bottom:18px;
+
+    margin-left:80px;
+
+}
+
+.user-message p{
+
+    margin:0;
+
+}
+
+.assistant-message{
+
+    margin-bottom:18px;
+
+}
+
+.assistant-message p{
+
+    line-height:1.7;
+
+}
