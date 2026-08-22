@@ -1,1 +1,197 @@
+<!DOCTYPE html>
+<html lang="es">
 
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Digital Twin AI Copilot</title>
+
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/ai-assistant.css">
+
+</head>
+
+<body>
+
+<div class="ai-page">
+
+    <header class="ai-header">
+
+        <div>
+
+            <h1>🤖 Digital Twin AI Copilot</h1>
+
+            <p>
+                Asistente inteligente para operación, mantenimiento y análisis
+                de activos eléctricos.
+            </p>
+
+        </div>
+
+        <a href="../index.html" class="back-button">
+
+            ← Volver al Portfolio
+
+        </a>
+
+    </header>
+
+    <main class="ai-layout">
+
+        <!-- CHAT -->
+
+        <section class="chat-panel">
+
+            <div id="chatMessages" class="chat-messages">
+
+                <div class="assistant-message">
+
+                    <h3>Hola 👋</h3>
+
+                    <p>
+
+                        Soy el asistente del Digital Twin.
+
+                        Puedo ayudarte a consultar:
+
+                    </p>
+
+                    <ul>
+
+                        <li>Estado de la subestación</li>
+
+                        <li>Alarmas activas</li>
+
+                        <li>Activos críticos</li>
+
+                        <li>Temperaturas</li>
+
+                        <li>Manuales técnicos</li>
+
+                        <li>Modelo BIM</li>
+
+                    </ul>
+
+                </div>
+
+            </div>
+
+            <div class="chat-input">
+
+                <textarea
+
+                    id="question"
+
+                    placeholder="Escribí tu consulta..."
+
+                ></textarea>
+
+                <button id="sendButton">
+
+                    Preguntar
+
+                </button>
+
+            </div>
+
+        </section>
+
+        <!-- PANEL DERECHO -->
+
+        <aside class="context-panel">
+
+            <div class="context-card">
+
+                <h2>Estado General</h2>
+
+                <div id="generalStatus">
+
+                    Cargando...
+
+                </div>
+
+            </div>
+
+            <div class="context-card">
+
+                <h2>Alarmas</h2>
+
+                <div id="alarmsPanel">
+
+                    Cargando...
+
+                </div>
+
+            </div>
+
+            <div class="context-card">
+
+                <h2>Activos Críticos</h2>
+
+                <div id="criticalPanel">
+
+                    Cargando...
+
+                </div>
+
+            </div>
+
+            <div class="context-card">
+
+                <h2>Sugerencias</h2>
+
+                <div class="suggestions">
+
+                    <button class="prompt-btn">
+
+                        Estado general
+
+                    </button>
+
+                    <button class="prompt-btn">
+
+                        Activos críticos
+
+                    </button>
+
+                    <button class="prompt-btn">
+
+                        Alarmas activas
+
+                    </button>
+
+                    <button class="prompt-btn">
+
+                        Temperaturas
+
+                    </button>
+
+                    <button class="prompt-btn">
+
+                        Buscar TR-02
+
+                    </button>
+
+                    <button class="prompt-btn">
+
+                        Consultar manual ABB
+
+                    </button>
+
+                </div>
+
+            </div>
+
+        </aside>
+
+    </main>
+
+</div>
+
+<script src="../js/ai-assistant.js"></script>
+
+</body>
+
+</html>
