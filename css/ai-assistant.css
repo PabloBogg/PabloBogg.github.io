@@ -1,1 +1,343 @@
+/* ==========================================
+   DIGITAL TWIN AI COPILOT
+========================================== */
 
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+body{
+
+    background:#0b1220;
+
+    color:#f3f4f6;
+
+    font-family:Inter,Segoe UI,sans-serif;
+
+}
+
+.ai-page{
+
+    width:100%;
+
+    min-height:100vh;
+
+    padding:40px;
+
+}
+
+/* HEADER */
+
+.ai-header{
+
+    display:flex;
+
+    justify-content:space-between;
+
+    align-items:center;
+
+    margin-bottom:30px;
+
+}
+
+.ai-header h1{
+
+    font-size:38px;
+
+    font-weight:700;
+
+    margin-bottom:8px;
+
+}
+
+.ai-header p{
+
+    color:#94a3b8;
+
+    font-size:16px;
+
+}
+
+.back-button{
+
+    color:white;
+
+    text-decoration:none;
+
+    border:1px solid #334155;
+
+    padding:12px 20px;
+
+    border-radius:12px;
+
+    transition:.3s;
+
+}
+
+.back-button:hover{
+
+    background:#1e293b;
+
+}
+
+/* LAYOUT */
+
+.ai-layout{
+
+    display:grid;
+
+    grid-template-columns:2fr 420px;
+
+    gap:25px;
+
+}
+
+/* CHAT */
+
+.chat-panel{
+
+    background:#111827;
+
+    border:1px solid #1f2937;
+
+    border-radius:18px;
+
+    overflow:hidden;
+
+    display:flex;
+
+    flex-direction:column;
+
+    height:80vh;
+
+}
+
+/* MENSAJES */
+
+.chat-messages{
+
+    flex:1;
+
+    overflow-y:auto;
+
+    padding:35px;
+
+}
+
+.assistant-message{
+
+    background:#172554;
+
+    border-left:4px solid #3b82f6;
+
+    padding:25px;
+
+    border-radius:15px;
+
+}
+
+.assistant-message h3{
+
+    margin-bottom:15px;
+
+}
+
+.assistant-message p{
+
+    margin-bottom:15px;
+
+}
+
+.assistant-message ul{
+
+    margin-left:20px;
+
+}
+
+.assistant-message li{
+
+    margin-bottom:10px;
+
+}
+
+/* INPUT */
+
+.chat-input{
+
+    border-top:1px solid #1f2937;
+
+    padding:25px;
+
+    display:flex;
+
+    gap:20px;
+
+}
+
+.chat-input textarea{
+
+    flex:1;
+
+    resize:none;
+
+    height:70px;
+
+    border:none;
+
+    outline:none;
+
+    background:#1f2937;
+
+    color:white;
+
+    border-radius:12px;
+
+    padding:18px;
+
+    font-size:15px;
+
+}
+
+.chat-input button{
+
+    width:170px;
+
+    border:none;
+
+    border-radius:12px;
+
+    background:#2563eb;
+
+    color:white;
+
+    font-weight:600;
+
+    cursor:pointer;
+
+    transition:.3s;
+
+}
+
+.chat-input button:hover{
+
+    background:#1d4ed8;
+
+}
+
+/* PANEL DERECHO */
+
+.context-panel{
+
+    display:flex;
+
+    flex-direction:column;
+
+    gap:20px;
+
+}
+
+.context-card{
+
+    background:#111827;
+
+    border:1px solid #1f2937;
+
+    border-radius:16px;
+
+    padding:22px;
+
+}
+
+.context-card h2{
+
+    font-size:18px;
+
+    margin-bottom:18px;
+
+}
+
+.context-card div{
+
+    color:#cbd5e1;
+
+}
+
+/* BOTONES */
+
+.suggestions{
+
+    display:flex;
+
+    flex-direction:column;
+
+    gap:12px;
+
+}
+
+.prompt-btn{
+
+    border:none;
+
+    cursor:pointer;
+
+    background:#1f2937;
+
+    color:white;
+
+    padding:14px;
+
+    border-radius:10px;
+
+    transition:.25s;
+
+    text-align:left;
+
+}
+
+.prompt-btn:hover{
+
+    background:#334155;
+
+}
+
+/* SCROLL */
+
+.chat-messages::-webkit-scrollbar{
+
+    width:8px;
+
+}
+
+.chat-messages::-webkit-scrollbar-thumb{
+
+    background:#334155;
+
+    border-radius:10px;
+
+}
+
+/* RESPONSIVE */
+
+@media(max-width:1100px){
+
+.ai-layout{
+
+grid-template-columns:1fr;
+
+}
+
+.context-panel{
+
+order:-1;
+
+}
+
+.chat-panel{
+
+height:65vh;
+
+}
+
+}
