@@ -4,191 +4,633 @@
 <head>
 
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1.0"
+    >
 
     <title>Digital Twin AI Copilot</title>
 
-    <link rel="stylesheet" href="../css/style.css">
-    <link rel="stylesheet" href="../css/ai-assistant.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+
+    <link
+        rel="preconnect"
+        href="https://fonts.gstatic.com"
+        crossorigin
+    >
+
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap"
+        rel="stylesheet"
+    >
+
+    <link
+        rel="stylesheet"
+        href="../css/ai-assistant.css"
+    >
 
 </head>
 
 <body>
 
-<div class="ai-page">
+<div class="copilot-app">
 
-    <header class="ai-header">
+    <!-- =====================================================
+         TOP BAR
+    ====================================================== -->
 
-        <div>
+    <header class="copilot-topbar">
 
-            <h1>🤖 Digital Twin AI Copilot</h1>
+        <div class="topbar-left">
 
-            <p>
-                Asistente inteligente para operación, mantenimiento y análisis
-                de activos eléctricos.
-            </p>
+            <a
+                href="../index.html"
+                class="brand-link"
+            >
+                Pablo Boggetti
+            </a>
+
+            <div class="topbar-separator"></div>
+
+            <div class="product-title">
+
+                <span class="product-eyebrow">
+                    DIGITAL TWIN PLATFORM
+                </span>
+
+                <strong>
+                    AI Engineering Copilot
+                </strong>
+
+            </div>
 
         </div>
 
-        <a href="../index.html" class="back-button">
+        <div class="topbar-right">
 
-            ← Volver al Portfolio
+            <div class="connection-status">
 
-        </a>
+                <span class="status-dot"></span>
+
+                <span>
+                    Sistema conectado
+                </span>
+
+            </div>
+
+            <a
+                href="../index.html#projects"
+                class="portfolio-button"
+            >
+                Volver al portfolio
+            </a>
+
+        </div>
 
     </header>
 
-    <main class="ai-layout">
 
-        <!-- CHAT -->
+    <!-- =====================================================
+         MAIN LAYOUT
+    ====================================================== -->
 
-        <section class="chat-panel">
+    <main class="copilot-layout">
 
-            <div id="chatMessages" class="chat-messages">
 
-                <div class="assistant-message">
+        <!-- =================================================
+             LEFT SIDEBAR
+        ================================================== -->
 
-                    <h3>Hola 👋</h3>
+        <aside class="copilot-sidebar">
 
-                    <p>
+            <div class="sidebar-section">
 
-                        Soy el asistente del Digital Twin.
+                <p class="sidebar-label">
+                    Plataforma
+                </p>
 
-                        Puedo ayudarte a consultar:
+                <a
+                    href="../index.html"
+                    class="sidebar-link"
+                >
+                    <span class="sidebar-icon">⌂</span>
+                    <span>Inicio</span>
+                </a>
 
+                <a
+                    href="bim-substation.html"
+                    class="sidebar-link"
+                >
+                    <span class="sidebar-icon">◇</span>
+                    <span>Modelo BIM</span>
+                </a>
+
+                <a
+                    href="asset-reliability-dashboard.html"
+                    class="sidebar-link"
+                >
+                    <span class="sidebar-icon">▦</span>
+                    <span>Dashboard</span>
+                </a>
+
+                <a
+                    href="ai-assistant.html"
+                    class="sidebar-link active"
+                >
+                    <span class="sidebar-icon">✦</span>
+                    <span>AI Copilot</span>
+                </a>
+
+            </div>
+
+
+            <div class="sidebar-section">
+
+                <p class="sidebar-label">
+                    Conocimiento
+                </p>
+
+                <button
+                    type="button"
+                    class="sidebar-action prompt-btn"
+                >
+                    <span class="sidebar-icon">⚡</span>
+                    Estado general
+                </button>
+
+                <button
+                    type="button"
+                    class="sidebar-action prompt-btn"
+                >
+                    <span class="sidebar-icon">!</span>
+                    Alarmas activas
+                </button>
+
+                <button
+                    type="button"
+                    class="sidebar-action prompt-btn"
+                >
+                    <span class="sidebar-icon">△</span>
+                    Activos críticos
+                </button>
+
+                <button
+                    type="button"
+                    class="sidebar-action prompt-btn"
+                >
+                    <span class="sidebar-icon">▤</span>
+                    Consultar manual ABB
+                </button>
+
+            </div>
+
+
+            <div class="sidebar-footer">
+
+                <span class="sidebar-footer-label">
+                    Subestación
+                </span>
+
+                <strong>
+                    132 kV
+                </strong>
+
+                <span>
+                    Digital Twin activo
+                </span>
+
+            </div>
+
+        </aside>
+
+
+        <!-- =================================================
+             CHAT
+        ================================================== -->
+
+        <section class="copilot-chat">
+
+
+            <!-- CHAT HEADER -->
+
+            <div class="chat-header">
+
+                <div>
+
+                    <p class="chat-eyebrow">
+                        ENGINEERING INTELLIGENCE
                     </p>
 
-                    <ul>
+                    <h1>
+                        ¿Qué necesitás analizar?
+                    </h1>
 
-                        <li>Estado de la subestación</li>
+                    <p>
+                        Consultá datos operativos, activos, documentación
+                        técnica y el modelo digital de la subestación.
+                    </p>
 
-                        <li>Alarmas activas</li>
+                </div>
 
-                        <li>Activos críticos</li>
+                <div class="chat-model-badge">
 
-                        <li>Temperaturas</li>
+                    <span>
+                        MODEL
+                    </span>
 
-                        <li>Manuales técnicos</li>
-
-                        <li>Modelo BIM</li>
-
-                    </ul>
+                    <strong>
+                        Qwen3 8B
+                    </strong>
 
                 </div>
 
             </div>
 
-            <div class="chat-input">
 
-                <textarea
+            <!-- MESSAGES -->
 
-                    id="question"
+            <div
+                id="chatMessages"
+                class="chat-messages"
+            >
 
-                    placeholder="Escribí tu consulta..."
+                <div class="assistant-message assistant-welcome">
 
-                ></textarea>
+                    <div class="assistant-avatar">
+                        AI
+                    </div>
 
-                <button id="sendButton">
+                    <div class="message-content">
 
-                    Preguntar
+                        <p class="message-author">
+                            Digital Twin Copilot
+                        </p>
 
-                </button>
+                        <h2>
+                            Sistema listo para consultar
+                        </h2>
+
+                        <p>
+                            Estoy conectado a la información operativa
+                            de la subestación y puedo ayudarte a analizar
+                            su estado actual.
+                        </p>
+
+                        <div class="welcome-capabilities">
+
+                            <button
+                                type="button"
+                                class="capability-card prompt-btn"
+                            >
+                                <span>01</span>
+
+                                <strong>
+                                    Estado general
+                                </strong>
+
+                                <small>
+                                    KPIs y condición de activos
+                                </small>
+                            </button>
+
+                            <button
+                                type="button"
+                                class="capability-card prompt-btn"
+                            >
+                                <span>02</span>
+
+                                <strong>
+                                    Activos críticos
+                                </strong>
+
+                                <small>
+                                    Riesgo y priorización
+                                </small>
+                            </button>
+
+                            <button
+                                type="button"
+                                class="capability-card prompt-btn"
+                            >
+                                <span>03</span>
+
+                                <strong>
+                                    Alarmas activas
+                                </strong>
+
+                                <small>
+                                    Eventos que requieren atención
+                                </small>
+                            </button>
+
+                            <button
+                                type="button"
+                                class="capability-card prompt-btn"
+                            >
+                                <span>04</span>
+
+                                <strong>
+                                    Temperaturas
+                                </strong>
+
+                                <small>
+                                    Equipos con mayor temperatura
+                                </small>
+                            </button>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+
+            <!-- INPUT AREA -->
+
+            <div class="chat-composer">
+
+                <div class="composer-inner">
+
+                    <textarea
+                        id="question"
+                        rows="1"
+                        placeholder="Preguntá sobre la subestación, un activo, una alarma o documentación técnica..."
+                    ></textarea>
+
+                    <button
+                        id="sendButton"
+                        type="button"
+                        class="send-button"
+                        aria-label="Enviar consulta"
+                    >
+                        <span>
+                            Enviar
+                        </span>
+
+                        <strong>
+                            →
+                        </strong>
+                    </button>
+
+                </div>
+
+                <div class="composer-footer">
+
+                    <span>
+                        Enter para enviar · Shift + Enter para nueva línea
+                    </span>
+
+                    <span>
+                        AI Engineering Copilot
+                    </span>
+
+                </div>
 
             </div>
 
         </section>
 
-        <!-- PANEL DERECHO -->
+
+        <!-- =================================================
+             CONTEXT PANEL
+        ================================================== -->
 
         <aside class="context-panel">
 
-            <div class="context-card">
 
-                <h2>Estado General</h2>
+            <section class="context-block">
 
-                <div id="generalStatus">
+                <div class="context-heading">
 
-                    Cargando...
+                    <div>
 
-                </div>
+                        <p>
+                            SYSTEM STATUS
+                        </p>
 
-            </div>
+                        <h2>
+                            Fuentes conectadas
+                        </h2>
 
-            <div class="context-card">
+                    </div>
 
-                <h2>Alarmas</h2>
-
-                <div id="alarmsPanel">
-
-                    Cargando...
-
-                </div>
-
-            </div>
-
-            <div class="context-card">
-
-                <h2>Activos Críticos</h2>
-
-                <div id="criticalPanel">
-
-                    Cargando...
+                    <span class="system-ready">
+                        READY
+                    </span>
 
                 </div>
 
-            </div>
 
-            <div class="context-card">
+                <div class="source-list">
 
-                <h2>Sugerencias</h2>
+                    <div class="source-item">
 
-                <div class="suggestions">
+                        <div>
 
-                    <button class="prompt-btn">
+                            <span class="source-dot online"></span>
 
-                        Estado general
+                            <span>
+                                Databricks
+                            </span>
 
-                    </button>
+                        </div>
 
-                    <button class="prompt-btn">
+                        <strong>
+                            Connected
+                        </strong>
 
-                        Activos críticos
+                    </div>
 
-                    </button>
+                    <div class="source-item">
 
-                    <button class="prompt-btn">
+                        <div>
 
-                        Alarmas activas
+                            <span class="source-dot online"></span>
 
-                    </button>
+                            <span>
+                                Speckle BIM
+                            </span>
 
-                    <button class="prompt-btn">
+                        </div>
 
-                        Temperaturas
+                        <strong>
+                            Connected
+                        </strong>
 
-                    </button>
+                    </div>
 
-                    <button class="prompt-btn">
+                    <div class="source-item">
 
-                        Buscar TR-02
+                        <div>
 
-                    </button>
+                            <span class="source-dot online"></span>
 
-                    <button class="prompt-btn">
+                            <span>
+                                RAG / Manuals
+                            </span>
 
-                        Consultar manual ABB
+                        </div>
 
-                    </button>
+                        <strong>
+                            Ready
+                        </strong>
+
+                    </div>
+
+                    <div class="source-item">
+
+                        <div>
+
+                            <span class="source-dot online"></span>
+
+                            <span>
+                                Local LLM
+                            </span>
+
+                        </div>
+
+                        <strong>
+                            Qwen3
+                        </strong>
+
+                    </div>
 
                 </div>
 
-            </div>
+            </section>
+
+
+            <section class="context-block">
+
+                <div class="context-heading">
+
+                    <div>
+
+                        <p>
+                            LIVE CONTEXT
+                        </p>
+
+                        <h2>
+                            Estado general
+                        </h2>
+
+                    </div>
+
+                </div>
+
+                <div
+                    id="generalStatus"
+                    class="context-data"
+                >
+                    <span class="context-loading">
+                        Disponible mediante consulta
+                    </span>
+                </div>
+
+            </section>
+
+
+            <section class="context-block">
+
+                <div class="context-heading">
+
+                    <div>
+
+                        <p>
+                            EVENTOS
+                        </p>
+
+                        <h2>
+                            Alarmas
+                        </h2>
+
+                    </div>
+
+                </div>
+
+                <div
+                    id="alarmsPanel"
+                    class="context-data"
+                >
+                    <span class="context-loading">
+                        Consultar alarmas activas
+                    </span>
+                </div>
+
+            </section>
+
+
+            <section class="context-block">
+
+                <div class="context-heading">
+
+                    <div>
+
+                        <p>
+                            PRIORIDAD
+                        </p>
+
+                        <h2>
+                            Activos críticos
+                        </h2>
+
+                    </div>
+
+                </div>
+
+                <div
+                    id="criticalPanel"
+                    class="context-data"
+                >
+                    <span class="context-loading">
+                        Consultar activos críticos
+                    </span>
+                </div>
+
+            </section>
+
+
+            <section class="context-block context-selected">
+
+                <div class="context-heading">
+
+                    <div>
+
+                        <p>
+                            CURRENT ASSET
+                        </p>
+
+                        <h2>
+                            Sin selección
+                        </h2>
+
+                    </div>
+
+                </div>
+
+                <p class="selected-help">
+                    Consultá un activo por su identificador para mostrar
+                    su información en este panel.
+                </p>
+
+                <button
+                    type="button"
+                    class="secondary-action prompt-btn"
+                >
+                    Buscar TR-02
+                </button>
+
+            </section>
 
         </aside>
 
     </main>
 
 </div>
+
 
 <script src="../js/ai-assistant.js"></script>
 
